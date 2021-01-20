@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+	<link rel="stylesheet" href="style.css">
+	
+</head>
+<body id='body'class="text-center">
+    
+    <!-- start heading -->
+    <div class="heading pt-3" >
+        <h5>RGB GAME Verion2</h5>
+    </div>
+    <hr>
+    <!-- end Heading -->
+
+    <button class="badge badge-danger btn-lg" id="coin"><h6>0</h6></button>
+	
+	<h6>#<span id="totalNaira">0</span></h6>
+
+    
+    <!-- start prediction -->
+    <div class="containe ">
+       
+            
+                <!--<form action="" class="form-group"> -->
+                    <h6>Make Your predictions</h6>
+                    <input type="number" id="predict1" name="predict1" value="1" class"form-control" min='1' max='3' hidden>
+					<span class="btn btn-info" id="texta1" value="1">1</span> 
+					<span class="btn btn-info" id="texta2">2</span>  
+					<span class="btn btn-info" id="texta3">3</span> 
+                    <p></p>
+                    <input type="number" id="predict2" name="predict2" value="1" class"form-control" min='1' max='3' hidden>
+					<span class="btn btn-info" id="textb1">1</span> 
+					<span class="btn btn-info" id="textb2">2</span>  
+					<span class="btn btn-info" id="textb3">3</span> 
+                    <p></p>
+                    <input type="number" id="predict3" name="predict3" value="1" class"form-control" min='1' max='3' hidden>
+					<span class="btn btn-info" id="textc1">1</span> 
+					<span class="btn btn-info" id="textc2">2</span>  
+					<span class="btn btn-info" id="textc3">3</span> 
+                <!--</form> -->
+            
+       
+    </div>
+    <!-- end prediction -->
+	<br />
+    <div class="result badge badge-info badge-lg containe">
+        <span class="p-2" id="result1"> 0 </span>
+        <span class="p-2" id="result2"> 0 </span>
+        <span class="p-2" id="result3"> 0 </span>
+    </div>
+
+    <div class="containe" id='counter'>
+
+    </div>
+    
+    <!-- start Button -->
+    <div class="containe pt-4">
+
+        <div class="  text-center">
+            <button class="btn btn-danger btn-lg" id="run1">
+                run
+            </button>  
+        </div>
+        
+    </div>
+    <!--end button  -->
+
+
+	<div class="containe pt-4">
+
+        <div class="  text-center">
+            <button class="btn btn-info btn-lg" id="restart">
+                Restart Game
+            </button>  
+        </div>
+        
+    </div>
+	
+	
+	<div class="containe pt-4">
+
+        <div class="  text-center">
+		
+            <button class="badge badge-danger btn-lg">
+                Game|Session <hr />
+				<span id="overallGamePlayed" >0</span> || 
+				<span id="totalGamePlayed" >0</span>
+            </button> 
+			
+			<button class="badge badge-danger btn-lg" >
+                SessionCount <hr /><span id="sessionTime">0</span>
+            </button> 
+			
+			<button class="badge badge-danger btn-lg" >
+                SessionScore <hr /><span id="sessionScore">0</span>
+            </button> 
+            
+						
+        </div>
+        
+    </div>
+    
+    <div class="text-center pt-2">
+		<button id="menu" class="badge  btn-lg" >
+			<a href="menu.html" style="color:gray">MEMU</a>
+		</button> 
+
+    </div>
+
+
+    <script src="GameLoad.js"></script>
+</body>
+</html>
