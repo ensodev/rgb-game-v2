@@ -227,7 +227,7 @@ function runGame(){
 		
 			document.getElementById('coin').innerHTML = totalCoin;
 		
-			if(sessionTime == 3){
+			if(sessionTime == 50){
 			
 				//sessionTime = 0;
 				alert('Session Over, Click Restart to start another session');
