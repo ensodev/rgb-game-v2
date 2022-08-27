@@ -139,7 +139,7 @@ function runGame(){
 	}else{
 	//console.log(pred1 + "prrd1");
 	
-		if(counter <= 3){
+		if(counter <= 50){
 		
 			totalGamePlayed++;
 			sessionTime++;
