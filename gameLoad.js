@@ -1,5 +1,6 @@
+//ss
 let overallGamePlayed = 0;
-
+//ss
 let totalCoin = 0;
 
 let counter = 1;
@@ -13,6 +14,7 @@ let totalGamePlayed = 0;
 
 let sessionTime = 0;
 
+//ss
 let totalNaira = 1;
 
 let checkButtonClick = 0;
