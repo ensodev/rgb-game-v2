@@ -313,17 +313,20 @@ function gameRestart(){
 	   document.getElementById('totalNaira').innerHTML = parseInt(totalNaira);
 	   
 	   }else{
-	   
-	     	alert('Start a new game, you did not earn any naira');
-	     	totalGamePlayed = 0;
-	     	totalCoin = 0;
-	     	document.getElementById('coin').innerHTML = totalCoin;
-	     	let naira = document.getElementById('totalNaira').innerHTML;
-	     	//totalNaira = parseInt(totalNaira) + parseInt(naira);
-	     	document.getElementById('totalNaira').innerHTML = parseInt(totalNaira);
+	   	
+	     		alert('Start a new game, you did not earn any naira, #20 loss to you');
+			
+		   	totalNaira = totalNaira - 20;
+		   
+	     		totalGamePlayed = 0;
+	     		totalCoin = 0;
+	     		document.getElementById('coin').innerHTML = totalCoin;
+	     		let naira = document.getElementById('totalNaira').innerHTML;
+	     		//totalNaira = parseInt(totalNaira) + parseInt(naira);
+	     		document.getElementById('totalNaira').innerHTML = parseInt(totalNaira);
 	     	
-	     	console.log(naira);
-	     	console.log(totalNaira);
+	     		console.log(naira);
+	     		console.log(totalNaira);
 	     	
 	   }
 	   
