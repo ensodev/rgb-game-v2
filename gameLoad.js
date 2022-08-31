@@ -329,6 +329,7 @@ function gameRestart(){
 	   localStorage.setItem("totalNaira", `${totalNaira}`);
 
 	   document.getElementById('totalNaira').innerHTML = parseInt(totalNaira);
+	   document.getElementById('overallGamePlayed').innerHTML = overallGamePlayed;
 	   
 	   }else{
 	   	
@@ -343,7 +344,7 @@ function gameRestart(){
 	     		let naira = document.getElementById('totalNaira').innerHTML;
 	     		//totalNaira = parseInt(totalNaira) + parseInt(naira);
 	     		document.getElementById('totalNaira').innerHTML = parseInt(totalNaira);
-	     	
+	     		document.getElementById('overallGamePlayed').innerHTML = overallGamePlayed;
 	     		console.log(naira);
 	     		console.log(totalNaira);
 	     	
