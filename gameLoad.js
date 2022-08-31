@@ -1,5 +1,19 @@
 //ss
-let overallGamePlayed = 0;
+if(localStorage.getItem("overallGamePlayed") == ""  || localStorage.getItem("overallGamePlayed") == null){
+
+	localStorage.setItem("overallGamePlayed", "0");
+
+}
+
+if(localStorage.getItem("totalNaira") == ""  || localStorage.getItem("totalNaira") == null){
+
+	localStorage.setItem("totalNaira", "0");
+	 
+}
+
+
+
+var overallGamePlayed = parseInt(localStorage.getItem("overallGamePlayed"));
 //ss
 let totalCoin = 0;
 
@@ -15,7 +29,7 @@ let totalGamePlayed = 0;
 let sessionTime = 0;
 
 //ss
-let totalNaira = 1;
+var totalNaira = parseInt(localStorage.getItem("totalNaira"));
 
 let checkButtonClick = 0;
 
@@ -300,7 +314,8 @@ function gameRestart(){
 	
 	if(totalGamePlayed >= 50){
 		overallGamePlayed++;
-		document.getElementById('overallGamePlayed').innerHTML = parseInt(overallGamePlayed);
+		localStorage.setItem("overallGamePlayed", `${overallGamePlayed}`);
+		document.getElementById('overallGamePlayed').innerHTML = overallGamePlayed;
 		
 	   if(totalGamePlayed < totalCoin){
 	   		totalNaira = 10 * (totalCoin - totalGamePlayed);
@@ -310,14 +325,18 @@ function gameRestart(){
 	   		document.getElementById('coin').innerHTML = totalCoin;
 	   let naira = document.getElementById('totalNaira').innerHTML;
 	   totalNaira = parseInt(totalNaira) + parseInt(naira);
+	   
+	   localStorage.setItem("totalNaira", `${totalNaira}`);
+
 	   document.getElementById('totalNaira').innerHTML = parseInt(totalNaira);
 	   
 	   }else{
 	   	
 	     		alert('Start a new game, you did not earn any naira, #20 loss to you');
 			
-		   	totalNaira = totalNaira - 20;
-		   
+		   	totalNaira = totalNaira - 30;
+			localStorage.setItem("totalNaira", `${totalNaira}`);
+
 	     		totalGamePlayed = 0;
 	     		totalCoin = 0;
 	     		document.getElementById('coin').innerHTML = totalCoin;
@@ -334,4 +353,5 @@ function gameRestart(){
 	}
 	
 document.getElementById('totalNaira').innerHTML = totalNaira;
+document.getElementById('overallGamePlayed').innerHTML = overallGamePlayed;
 }
