@@ -349,6 +349,8 @@ function gameRestart(){
 	     		console.log(totalNaira);
 	     	
 	   }
+		document.getElementById('totalNaira').innerHTML = totalNaira;
+		document.getElementById('overallGamePlayed').innerHTML = overallGamePlayed;
 	   
 	   
 	}
