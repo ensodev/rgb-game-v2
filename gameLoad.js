@@ -333,7 +333,7 @@ function gameRestart(){
 	   
 	   }else{
 	   	
-	     		alert('Start a new game, you did not earn any naira, #20 loss to you');
+	     		alert('Start a new game, you did not earn any naira, #30 loss to you');
 			
 		   	totalNaira = totalNaira - 30;
 			localStorage.setItem("totalNaira", `${totalNaira}`);
@@ -344,7 +344,7 @@ function gameRestart(){
 	     		let naira = document.getElementById('totalNaira').innerHTML;
 	     		//totalNaira = parseInt(totalNaira) + parseInt(naira);
 	     		document.getElementById('totalNaira').innerHTML = parseInt(totalNaira);
-	     		document.getElementById('overallGamePlayed').innerHTML = overallGamePlayed;
+	     	
 	     		console.log(naira);
 	     		console.log(totalNaira);
 	     	
